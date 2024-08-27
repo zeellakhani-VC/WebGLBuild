@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine on
+<Files "*.wasm">
+    AddType application/wasm .wasm
+    AddEncoding gzip wasm
+</Files>
+<Files "*.unityweb">
+    AddEncoding gzip unityweb
+</Files>
